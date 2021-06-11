@@ -24,19 +24,11 @@ class Footer extends Component {
         grid1 : [
             { title : "About us", link : "/page-aboutus" },
             { title : "Services", link : "/page-services" },
-            { title : "Team", link : "/page-team" },
-            { title : "Pricing", link : "/page-pricing" },
-            { title : "Project", link : "/page-work" },
-            { title : "Careers", link : "/page-jobs" },
-            { title : "Blog", link : "/page-blog" },
-            { title : "Login", link : "/page-cover-login" },
-        ],
+            ],
+
         grid2 : [
             { title : "Terms of Services", link : "/page-terms" },
             { title : "Privacy Policy", link : "/page-privacy" },
-            { title : "Documentation", link : "/documentation" },
-            { title : "Changelog", link : "/changelog" },
-            { title : "Components", link : "/components" },
         ]
     };
   }
@@ -51,7 +43,7 @@ class Footer extends Component {
                         <Link to="#" className="logo-footer">
                             <img src={this.props.isLight ? logodark : logolight} height="24" alt=""/>
                         </Link>
-                        <p className={ this.props.isLight ? "mt-4 text-muted" : "mt-4"}>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <p className={ this.props.isLight ? "mt-4 text-muted" : "mt-4"}> connect.</p>
                         <ul className="list-unstyled social-icon social mb-0 mt-4">
                             <li className="list-inline-item mr-1"><Link to="" className="rounded"><i><FeatherIcon icon="facebook" className="fea icon-sm fea-social" /></i></Link></li>
                             <li className="list-inline-item mr-1"><Link to="" className="rounded"><i><FeatherIcon icon="instagram" className="fea icon-sm fea-social" /></i></Link></li>
@@ -61,7 +53,7 @@ class Footer extends Component {
                     </Col>
                 
                     <Col lg="2" md="4" xs="12" className="mt-4 mt-sm-0 pt-2 pt-sm-0" name="footercolumn">
-                        <h4 className={this.props.isLight ? "text-dark footer-head" : "text-light footer-head"}>Company</h4>
+                        <h4 className={this.props.isLight ? "text-dark footer-head" : "text-light footer-head"}>Laptop centre</h4>
                         <ul className="list-unstyled footer-list mt-4">
                             {
                                 this.state.grid1.map((grid, key) =>
@@ -107,8 +99,8 @@ class Footer extends Component {
             <Container className="text-center">
                 <Row className="align-items-center">
                     <Col sm="6">
-                        <div className="text-sm-left">
-                            <p className="mb-0">© 2020-21 Landrick. Develop by <a href="https://themesbrand.com/" target="_blank"  rel="noopener noreferrer" className="text-success">Themesbrand</a>.</p>
+                        <div className="text-sm-centre">
+                            <p className="mb-0">© 2021-22. Developed by Master .</p>
                         </div>
                     </Col>
 
