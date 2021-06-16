@@ -35,6 +35,7 @@
     "react-youtube": "^7.11.2",
     "reactstrap": "^8.0.1",
     "redux": "^4.0.4",
+     "webpack": "4.44.2",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
