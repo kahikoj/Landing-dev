@@ -42,8 +42,8 @@ class NavbarPage extends Component {
                                     <img src={logodark} height="24" alt=""/>
                                 </Link>
                             </div>                  
-                            <div className="buy-button">
-                                <Link to="https://1.envato.market/4n73n" target="_blank" className="btn btn-primary">Buy Now</Link>
+                            <div className="sokomart">
+                                <Link to="https://sky.garden/shop/sokomart%0A%20%20%20%20%20%20?utm_source=merchant_app&utm_campaign=web_shop_link_share&utm_content=Sokomart" target="_blank" className="btn btn-primary">Sokomart</Link>
                             </div>
                             <div className="menu-extras">
                                         <div className="menu-item">

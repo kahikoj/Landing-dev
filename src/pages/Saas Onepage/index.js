@@ -6,19 +6,6 @@ import AOS from 'aos';
 import '../../../node_modules/aos/dist/aos.css'; 
 
 //Import Components
-import Section from "./Section";
-import Features from "./Features";
-import Process from "./Process";
-import BlockContainer from "./BlockContainer";
-import ModalVideoSection from "./ModalVideo";
-import Shape from "./Shape";
-import Testimonials from "./Testimonials";
-import Partners from "../../components/Shared/Partners";
-import Price from "./Price";
-import Team from "./Team";
-import ContactUs from "./ContactUs";
-import GoogleMap from "./GoogleMap";
-
 class SaasOnepage extends Component {
     constructor(props, context) { 
         super(props, context); 

@@ -4,8 +4,6 @@ import { withRouter } from 'react-router-dom';
 // Scroll up button
 import ScrollUpButton from "react-scroll-up-button";
 
-//Import Switcher
-import ThemeSwitcher from "./ThemeSwitcher";
 
 //Import Icons
 import FeatherIcon from 'feather-icons-react';
@@ -49,27 +47,7 @@ class Layout extends Component {
         }
         
         {this.props.children}
-        {(() => {
-          if (this.props.location.pathname === "/index-marketing" || this.props.location.pathname === "/index-digital-agency" || this.props.location.pathname === "/index-modern-business" || this.props.location.pathname === "/index-services" || this.props.location.pathname === "/index-job") {
-            return (
-              <Footer isLight={true} />
-            )
-          }
-          else if (this.props.location.pathname === "/index-portfolio" || this.props.location.pathname === "/page-contact-two") {
-            return (
-              <FooterWithoutMenuLightSocialOnly class="border-0 bg-light text-dark" />
-            )
-          }
-          else if (this.props.location.pathname === "/index-personal" || this.props.location.pathname === "/helpcenter-overview" || this.props.location.pathname === "/page-invoice") {
-            return (
-              <FooterWithoutMenuLightSocialOnly class="" />
-            )
-          } else {
-            return (
-              <Footer />
-            )
-          }
-        })()}
+         <Footer />
 
         
         
@@ -80,8 +58,6 @@ class Layout extends Component {
           </ScrollUpButton>
         {/* </div> */}
 
-        {/* theme switcher */}
-        <ThemeSwitcher/>
         </Suspense>
       </React.Fragment>
     );

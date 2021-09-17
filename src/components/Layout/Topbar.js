@@ -4,7 +4,7 @@ import { withRouter } from "react-router";
 import { Container } from "reactstrap";
 
 //Import images
-import logodark from "../../assets/images/logo-light.png";
+import logodark from "../../assets/images/logo-dark.png";
 
 class Topbar extends Component {
 
@@ -17,17 +17,15 @@ class Topbar extends Component {
                 { id : 1, title : "Home", link : "/index" },
                 { id : 2, title : "Shop", link : "/#", isOpenNestedSubMenu : false, isNew : true,
                     nestedChild : [
-                        { title : "All Products", link : "/shop-products", isNewPage : true },
-                        { title : "Product Details", link : "/shop-product-detail", isNewPage : true },
+                        { id : 2.0, title : "All Products", link : "/shop-products", isNewPage : true },
+                        { id : 2.1, title : "Product Details", link : "/shop-product-detail", isNewPage : true },
                     
                 ]
                 },
 
-                { id : 3, title : "Contact", link : "/#", isOpenSubMenu : false,
-                    child : [
-                        { id : 1, title : "About Us", link : "/page-aboutus"},
-                            ]
-                        },
+                { id : 3, title : "Contact", link : "/#", isOpenSubMenu : false},
+                { id : 4, title : "About Us", link : "/page-aboutus",
+                },
                        
                
             ]
@@ -121,9 +119,6 @@ class Topbar extends Component {
                                 <img src={logodark} id="brandLogo" height="24" alt=""/>
                             </Link>
                         </div> 
-                        <div className="buy-button">
-                        <a href="https://1.envato.market/landrickreactjs" target="_blank" rel="noopener noreferrer" id="buyButton" className="btn btn-primary">Buy Now</a>
-                        </div>
                         <div className="menu-extras">
                             <div className="menu-item">
                                 <Link to="#" onClick={ this.toggleLine } className={this.state.isOpen ? "navbar-toggle open" : "navbar-toggle" } >
@@ -221,9 +216,6 @@ class Topbar extends Component {
                                     )
                                 }
                             </ul>
-                            <div className="buy-menu-btn d-none">
-                            <a href="https://1.envato.market/landrickreactjs" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Buy Now</a>
-                            </div>
                         </div>
                     </Container>
                 </header>
